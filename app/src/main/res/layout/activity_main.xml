@@ -6,6 +6,8 @@
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
 
     <ToggleButton
+        android:textOn="Rouge"
+        android:textOff="Pas rouge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/BTN_Rouge"
@@ -15,6 +17,8 @@
         android:checked="false" />
 
     <ToggleButton
+        android:textOn="Vert"
+        android:textOff="Pas vert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/BTN_Vert"
@@ -24,6 +28,8 @@
         android:checked="false" />
 
     <ToggleButton
+        android:textOn="Bleu"
+        android:textOff="Pas bleu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/BTN_Bleu"
@@ -32,12 +38,8 @@
         android:layout_alignParentEnd="true"
         android:checked="false" />
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/zone_couleur"
         android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/toggleButton"></LinearLayout>
-
+        android:layout_width="match_parent"/>
 </RelativeLayout>
